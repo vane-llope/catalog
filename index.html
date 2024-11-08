@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="catalog">
+        <div class="wrapper">
+            <div class="cover cover-left"></div>
+            <div class="cover cover-right"></div>
+            <div class="book">
+                <!--profile page-->
+                <div class="book-page page-left">
+                    <div class="profile-page">
+                        <img src="./assets/img/factory/worker.jpg" alt="">
+                        <h1>Pasargad</h1>
+                        <h3>web developer</h3>
+                        <div class="social-media my-3">
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati molestiae animi nam illum
+                            nostrum quasi, quia omnis voluptates modi explicabo fuga. Natus officiis provident
+                            consequuntur at deserunt fugiat fuga adipisci.</p>
+                        <div class=" mt-3">
+                            <button class="btn btn-primary ">Download</button>
+                            <button class="btn border border-primary contact">Contact</button>
+                        </div>
+                    </div>
+                </div>
+                <!--page 1 & 2-->
+                <div class="book-page page-right turn" id="turn-1">
+                    <!-- page1 -->
+                    <div class="page-front">
+                        <h1 class="text-center mb-5">Work Experiences</h1>
+                        <div class="workeduc-box">
+                            <div class="workeduc-content ">
+                                <span class="year"><i class="bi bi-calendar"></i> 2022-2023</span>
+                                <h3>web developer - company</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia exercitationem
+                                    consectetur Quia exercitationem possimus, deserunt error mollit? Quia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="workeduc-box">
+                            <div class="workeduc-content ">
+                                <span class="year"><i class="bi bi-calendar"></i> 2023-2024</span>
+                                <h3>web developer - company</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia exercitationem
+                                    consectetur Quia exercitationem possimus, deserunt error mollit? Quia
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="workeduc-box">
+                            <div class="workeduc-content ">
+                                <span class="year"><i class="bi bi-calendar"></i> 2024-2025</span>
+                                <h3>web developer - company</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia exercitationem
+                                    consectetur Quia exercitationem possimus, deserunt error mollit? Quia
+                                </p>
+                            </div>
+                        </div>
+                        <span class="number-page">1</span>
+                        <!-- next button -->
+                        <span class="nextprev-btn" data-page="turn-1"><i class="bi bi-chevron-right"></i></span>
+                    </div>
+                    <!-- page2 -->
+                    <div class="page-back">
+                        <h1 class="text-center"> Education</h1>
+                        <span class="number-page">2</span>
+                        <!-- previous button -->
+                        <span class="nextprev-btn back" data-page="turn-1"><i class="bi bi-chevron-left"></i></span>
+                    </div>
+                </div>
+                <!-- page 3 & 4 -->
+                <div class="book-page page-right turn" id="turn-2">
+                    <!-- page 3 -->
+                    <div class="page-front">
+                        <h1 class="text-center">My Services</h1>
+                        <span class="number-page">3</span>
+                        <!-- previous button -->
+                        <span class="nextprev-btn" data-page="turn-2"><i class="bi bi-chevron-right"></i></span>
+                    </div>
+                    <!-- page 4 -->
+                    <div class="page-back">
+                        <h1 class="text-center">My Skills</h1>
+                        <span class="number-page">4</span>
+                        <!-- previous button -->
+                        <span class="nextprev-btn back" data-page="turn-2"><i class="bi bi-chevron-left"></i></span>
+                    </div>
+                </div>
+                <!-- page 5 & 6 -->
+                <div class="book-page page-right turn" id="turn-3">
+                    <!-- page 5 -->
+                    <div class="page-front">
+                        <h1 class="text-center">latest projects</h1>
+                        <span class="number-page">5</span>
+                        <!-- previous button -->
+                        <span class="nextprev-btn" data-page="turn-3"><i class="bi bi-chevron-right"></i></span>
+                    </div>
+                    <!-- page 6 -->
+                    <div class="page-back">
+                        <h1 class="text-center">Contact Us</h1>
+                        <span class="number-page">6</span>
+                        <!-- previous button -->
+                        <span class="nextprev-btn back" data-page="turn-3"><i class="bi bi-chevron-left"></i></span>
+                        <button class="btn back-profile">
+                            <p>Profile</p>
+                            <i class="bi bi-user"></i>
+
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<style>
+    :root {
+        --bg-color: #081b29;
+        --main-color: #00abf0;
+        --text-color: #333;
+        --second-text-color: #555;
+        --white-color: #fff;
+        --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+        --pages-color: linear-gradient(90deg, #fff, #ddd);
+        --border: 0.125rem solid #00abf0;
+        --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+    }
+
+    .catalog {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: var(--bg-color);
+        overflow: hidden;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 66rem;
+        height: 45rem;
+        padding: 2rem;
+        perspective: 250rem;
+        animation: show-animate 2s forwards;
+    }
+
+    @keyframes show-animate {
+
+        0%,
+        30% {
+            opacity: 0;
+            transform: rotate(-20deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+    }
+
+    .cover {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--cover-color);
+        box-shadow: var(--box-shadow);
+        border-top-left-radius: .6rem;
+        border-bottom-left-radius: .6rem;
+        transform-origin: right;
+    }
+
+    .cover.cover-left {
+        z-index: 0;
+    }
+
+    .cover.cover-right {
+        z-index: 100;
+        transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+    }
+
+    .cover.cover-right.turn {
+        transform: rotateY(180deg);
+    }
+
+    .book {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        perspective: 250rem;
+    }
+
+    .book .book-page {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: var(--pages-color);
+        box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
+        display: flex;
+        padding: 2rem;
+    }
+
+    .book-page.page-left {
+        box-shadow: -.6rem .6rem .6rem rgba(0, 0, 0, .1);
+    }
+
+    .profile-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-page img {
+        max-width: 300px;
+        border-radius: 50%;
+        border: .25rem solid var(--main-color);
+        margin-bottom: .8rem;
+    }
+
+    .profile-page h3 {
+        color: var(--main-color);
+    }
+
+    .profile-page .social-media a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: transparent;
+        border: var(--border);
+        border-radius: 50%;
+        font-size: 1.3rem;
+        color: var(--main-color);
+        margin: 0 .2rem;
+        transition: .5s;
+    }
+
+    .profile-page .social-media a:hover {
+        background: var(--main-color);
+        color: var(--white-color);
+    }
+
+    .btn:hover {
+        background: transparent;
+        color: var(--main-color);
+    }
+
+    .book-page.page-right {
+        position: absolute;
+        right: 0;
+        transform-style: preserve-3d;
+        transform-origin: left;
+        transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+    }
+
+    .book-page.page-right.turn {
+        transform: rotateY(-180deg);
+    }
+
+    .book-page .page-front,
+    .book-page .page-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--pages-color);
+        padding: 1.5rem 2rem;
+    }
+
+    .book-page .page-front {
+        transform: rotateY(0deg) translateZ(1px);
+    }
+
+
+
+    .book-page .page-back {
+        transform: rotateY(180deg) translateZ(1px);
+    }
+
+    .workeduc-box {
+        border-left: var(--border);
+    }
+
+    .workeduc-box .workeduc-content {
+        position: relative;
+        padding-left: 1.6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .workeduc-box .workeduc-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -0.65rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        background: var(--main-color);
+        border-radius: 50%;
+    }
+
+    .workeduc-content .year {
+        color: var(--main-color);
+    }
+
+
+    .workeduc-content .year i {
+        margin-right: .4rem;
+    }
+
+    .number-page {
+        position: absolute;
+        bottom: 1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .nextprev-btn {
+        position: absolute;
+        bottom: 0.9rem;
+        right: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .nextprev-btn:hover {
+        color: var(--main-color);
+    }
+
+    .nextprev-btn.back {
+        left: 1.5rem;
+    }
+</style>
+
+<script>
+    //turn pages when click on next or previous button
+    const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
+    pageTurnBtn.forEach((el, index) =>
+    {
+        el.onclick = () =>
+        {
+            const pageTurnId = el.getAttribute('data-page');
+            const pageTurn = document.getElementById(pageTurnId);
+
+            if (pageTurn.classList.contains('turn'))
+            {
+                pageTurn.classList.remove('turn')
+                setTimeout(() =>
+                {
+                    pageTurn.style.zIndex = 20 - index;
+                }, 500);
+            } else
+            {
+                pageTurn.classList.add('turn');
+                setTimeout(() =>
+                {
+                    pageTurn.style.zIndex = 20 + index;
+                }, 500)
+            }
+        }
+    })
+    //contact button when click
+    const pages = document.querySelectorAll('.book-page.page-right');
+    const contactBtn = document.querySelector('.contact');
+
+    contactBtn.onclick = () =>
+    {
+        pages.forEach((page, index) =>
+        {
+            setTimeout(() =>
+            {
+                page.classList.add('turn');
+
+                setTimeout(() =>
+                {
+                    page.style.zIndex = 20 + index;
+                }, 500)
+            }, (index + 1) * 200 + 100)
+        })
+    }
+
+    //create reverse index function
+    let totalPages = pages.length;
+    let pageNumber = 0;
+
+    function reverseIndex()
+    {
+        pageNumber--;
+        if (pageNumber < 0)
+        {
+            pageNumber = totalPages - 1;
+        }
+    }
+    //back profile button when click
+    const backProfileBtn = document.querySelector('.back-profile')
+
+    backProfileBtn.onclick = () =>
+    {
+        pages.forEach((_, index) =>
+        {
+            setTimeout(() =>
+            {
+                reverseIndex();
+                pages[pageNumber].classList.remove('turn');
+                setTimeout(() =>
+                {
+                    reverseIndex();
+                    pages[pageNumber].style.zIndex = 10 + index;
+                }, 500);
+            }, (index + 1) * 200 + 100)
+        })
+    }
+
+    //open catalog
+    const coverRight = document.querySelector('.cover.cover-right');
+    const pageLeft = document.querySelector('.book-page.page-left');
+
+    //opening catalog (cover right animation)
+    setTimeout(() =>
+    {
+        coverRight.classList.add('turn')
+    }, 2100)
+
+    setTimeout(() =>
+    {
+        coverRight.style.zIndex = -1
+    }, 2800)
+
+    //opening catalog (page left or profile page animation)
+    setTimeout(() =>
+    {
+        pageLeft.style.zIndex = 20
+    }, 3200)
+
+    //opening catalog (all page  right animation)
+    pages.forEach((_, index) =>
+    {
+        setTimeout(() =>
+        {
+            reverseIndex();
+            pages[pageNumber].classList.remove('turn');
+            setTimeout(() =>
+            {
+                reverseIndex();
+                pages[pageNumber].style.zIndex = 10 + index;
+            }, 500);
+        }, (index + 1) * 200 + 2100)
+    })
+</script>
